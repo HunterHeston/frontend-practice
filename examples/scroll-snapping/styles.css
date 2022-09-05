@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+  background-color: bisque;
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  height: 100%;
+  scroll-snap-align: start;
+}
