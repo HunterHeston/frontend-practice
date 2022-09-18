@@ -1,0 +1,70 @@
+/* complete guide to grid https://shrink.dev/DIPYqv */
+body {
+  margin: 0;
+  color: #344e41;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+  grid-gap: 10px;
+
+  /* Non-grid styles */
+  background-color: #dad7cd;
+  height: 100vh;
+  width: 100vw;
+}
+
+.grid-item {
+  background-color: #588157;
+  border: 1px solid #003049;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#item-1 {
+  grid-area: one;
+  align-self: center;
+  justify-self: center;
+}
+
+#item-2 {
+  grid-area: two;
+}
+
+#item-3 {
+  grid-area: three;
+}
+
+#item-4 {
+  grid-area: four;
+}
+
+#item-5 {
+  grid-area: five;
+}
+
+#item-6 {
+  grid-area: six;
+}
+
+#item-7 {
+  grid-area: seven;
+}
+
+#item-8 {
+  grid-area: eight;
+}
+
+#item-9 {
+  grid-area: nine;
+}
