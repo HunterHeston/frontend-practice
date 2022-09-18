@@ -12,7 +12,9 @@ body {
     "one two three"
     "four five six"
     "seven eight nine";
-  grid-gap: 10px;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
 
   /* Non-grid styles */
   background-color: #dad7cd;
@@ -33,8 +35,8 @@ body {
 
 #item-1 {
   grid-area: one;
-  align-self: center;
-  justify-self: center;
+  /* align-self: center; */
+  /* justify-self: center; */
 }
 
 #item-2 {
